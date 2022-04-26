@@ -1,30 +1,80 @@
 import java.util.Scanner;
-public class HeladoSergio {
 
-    
+public class HeladoSergio {
     public static void main(String[] args) {
-        System.out.println("Buenos días, desea el helado en cono o en tarrina:");
-        String envase = new Scanner(System.in).nextLine();
-        String respuesta1 = "Si";
+        String[] tipo = {"cono", "tarrina"};
+        String[] sabor={"fresa","nata","chocolate","naranja","limon"};
+        String saboresHelado = "| ";
+        int cont = 0;
+        double precio=0;
         
-        System.out.println("Tenemos los siguientes sabores: Fresa, nata, chocolate, naranja y limón. Elija uno: ");
-        String sabor1 = new Scanner(System.in).nextLine();
-        System.out.println("¿Desea algún sabor más?");
-        String responde = new Scanner(System.in).nextLine();
-            if(responde.equalsIgnoreCase(respuesta1)){
-                System.out.println("¿Qué otro sabor desea? Fresa, nata, chocolate, naranja y limón. Elija uno: ");
-                String sabor2 = new Scanner(System.in).nextLine();
-                System.out.println("¿Desea algún otro sabor?");
-                String responde2 = new Scanner (System.in).nextLine();
-                if(responde2.equalsIgnoreCase(respuesta1)){
-                   System.out.println("¿Qué otro sabor desea? Fresa, nata, chocolate, naranja y limón. Elija uno: ");
-                    String sabor3 = new Scanner(System.in).nextLine();
-                    System.out.println("Aquí tiene su " + envase + "con los siguientes sabores: " + sabor1 + ", " + sabor2 + " y " + sabor3);
+        System.out.println("Bienvenid@. ¿De que forma quiere su helado? (cono/tarrina): ");
+        String tipoHelado = new Scanner(System.in).nextLine();
+        tipoHelado = tipoHelado.toLowerCase();
+        if(tipoHelado.equals(tipo[0])){
+            precio += 1;
+            while(cont<3){
+                System.out.println("¿Que sabor quiere para su cono? (Fresa - Nata - Chocolate - Naranja - Limon): ");
+                String helado = new Scanner(System.in).nextLine();
+                helado = helado.toLowerCase();
+                if(helado.equals(sabor[0]) || helado.equals(sabor[1]) || helado.equals(sabor[2]) || helado.equals(sabor[3]) || helado.equals(sabor[4])){
+                    saboresHelado += helado + " | ";
+                    cont +=1;
+                    if(precio==1){
+                        precio += 1;
+                    }else{
+                        precio += 0.50;
+                    }
+                    if(cont<3){
+                        System.out.println("¿Quiere otro sabor? (si/no)");
+                        String decision = new Scanner(System.in).nextLine();
+                        decision = decision.toLowerCase();
+                        if (decision.equals("no")){
+                            cont=3;
+                        }else if(!decision.equals("si") && !decision.equals("no")){
+                            System.out.println("Error en la entrada.");
+                        }
+                    }
                 }else{
-                    System.out.println("Aquí tiene su " + envase + "con los siguientes sabores: " + sabor1 + " y " + sabor2);
+                    System.out.println("Lo siento no tenemos ese sabor disponible.");
                 }
-            }else{
-                System.out.println("Aquí tiene su " + envase + "con los siguientes sabores: " + sabor1);
+            }
+        }else if(tipoHelado.equals(tipo[1])){
+            precio += 0.50;
+            while(cont<3){
+                System.out.println("¿Que sabor quiere para su tarrina? (Fresa - Nata - Chocolate - Naranja - Limon): ");
+                String helado = new Scanner(System.in).nextLine();
+                helado = helado.toLowerCase();
+                if(helado.equals(sabor[0]) || helado.equals(sabor[1]) || helado.equals(sabor[2]) || helado.equals(sabor[3]) || helado.equals(sabor[4])){
+                    saboresHelado += helado + " | ";
+                    cont +=1;
+                    if (precio == 0.50){
+                        precio += 1;
+                    }else{
+                        precio += 0.50;
+                    }
+                    if(cont<3){
+                        System.out.println("¿Quiere otro sabor? (si/no)");
+                        String decision = new Scanner(System.in).nextLine();
+                        decision = decision.toLowerCase();
+                    if (decision.equals("no")){
+                        cont=3;
+                    }else if(!decision.equals("si") && !decision.equals("no")){
+                        System.out.println("Error en la entrada");
+                    }
+                    }
+                }else{
+                    System.out.println("Lo siento no tenemos ese sabor disponible.");
+                }
+            }
+        }else{
+            System.out.println("Valor incorrecto.");
         }
+        if(tipoHelado.equals(tipo[0]) || tipoHelado.equals(tipo[1])){
+            System.out.println("***********************************");
+            System.out.println("Aquí tiene su helado");
+            System.out.println(tipoHelado + " con sabor(es): " + saboresHelado);
+            System.out.println("Precio: " + precio + " euros");
+        }   
     }
 }
