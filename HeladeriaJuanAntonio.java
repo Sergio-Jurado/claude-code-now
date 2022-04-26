@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class HeladeriaJuanAntonio {
    public static void main(String[] args) {
-        String sabores[]={"fresa","nata","choco","naranja","limon" };
+        String sabores[]={"fresa","nata","chocolate","naranja","limón" };
         System.out.println("¿Que desea tarrina o cono?");
         String manera=new Scanner(System.in).nextLine();
        String forma = manera.toLowerCase();
