@@ -87,7 +87,7 @@ public class HeladoSergio {
             if(vuelta > 0){
                 System.out.println("Su vuelta es de: " + String.format("%.2f", vuelta) + " euros. Gracias por confiar en nosotros.");
             }else{
-                System.out.println("Lo siento, ha ingresado menos dinero del debido.");
+                System.out.println("Lo sentimos, ha ingresado menos dinero del debido.");
             }
         }   
     }
