@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
@@ -19,6 +15,7 @@ public class HeladeriaJavierLama {
         sabores.add("nata");
         sabores.add("naranja");
         sabores.add("limon");
+        sabores.add("pistacho");
         String saboresHelado = "";
         int maxSabores = 0;
         double precio=0;
@@ -27,7 +24,7 @@ public class HeladeriaJavierLama {
         String tipoHelado = new Scanner(System.in).nextLine();
         tipoHelado = tipoHelado.toLowerCase();
         if(tipoHelado.equals(tipo[0])){
-            precio += 1;
+            precio += 1+(1*0.10);
             while(maxSabores<3){
                 System.out.println("¿Que sabor quiere para su helado? (Fresa - Nata - Chocolate - Naranja - Limon)");
                 String helado = new Scanner(System.in).nextLine();
@@ -35,10 +32,10 @@ public class HeladeriaJavierLama {
                 if(sabores.contains(helado)){
                     saboresHelado += helado + ", ";
                     maxSabores +=1;
-                    if(precio==1){
-                        precio += 1;
+                    if(precio==1+(1*0.10)){
+                        precio += 1+(1*0.10);
                     }else{
-                        precio += 0.50;
+                        precio += 0.50+(1*0.10);
                     }
                     if(maxSabores<3){
                         System.out.println("¿Quiere otro sabor? (si/no)");
@@ -55,7 +52,7 @@ public class HeladeriaJavierLama {
                 }
             }
         }else if(tipoHelado.equals(tipo[1])){
-            precio += 0.50;
+            precio += 0.50+(1*0.10);
             while(maxSabores<3){
                 System.out.println("¿Que sabor quiere para su helado? (Fresa - Nata - Chocolate - Naranja - Limon)");
                 String helado = new Scanner(System.in).nextLine();
@@ -63,10 +60,10 @@ public class HeladeriaJavierLama {
                 if(sabores.contains(helado)){
                     saboresHelado += helado + " | ";
                     maxSabores +=1;
-                    if (precio == 0.50){
-                        precio += 1;
+                    if (precio == 0.50+(1*0.10)){
+                        precio += 1+(1*0.10);
                     }else{
-                        precio += 0.50;
+                        precio += 0.50+(1*0.10);
                     }
                     if(maxSabores<3){
                         System.out.println("¿Quiere otro sabor? (si/no)");
