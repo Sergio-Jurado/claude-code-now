@@ -1,7 +1,5 @@
 import java.util.Scanner;
-
-public class HeladoSergio {
-    public static void main(String[] args) {
+public static void main(String[] args) {
         String[] tipo = {"cono", "tarrina"};
         String[] sabor={"fresa","nata","chocolate","naranja","limon","pistacho"};
         String saboresHelado = "| ";
